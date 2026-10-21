@@ -36,9 +36,9 @@ python model.py                                 # entrena, evalúa y genera resu
 - El 20 % mejor puntuado concentra el **69,9 % del ingreso** que se generó en la ventana de prueba.
 - **Variables más importantes** (caída del AUC al permutarlas): recencia (0,038), días entre compras (0,022), monto total (0,008), facturas de los últimos 180 días (0,007) y frecuencia (0,005).
 
-![Curva ROC](graficos/roc.png)
-![Recompra por decil](graficos/deciles.png)
-![Importancia de variables](graficos/importancia.png)
+![Curva ROC](roc.png)
+![Recompra por decil](deciles.png)
+![Importancia de variables](importancia.png)
 
 ## Cómo se usaría en una decisión de negocio
 
@@ -60,4 +60,4 @@ Estas acciones son una propuesta basada en los datos del dataset público; no se
 
 - `build_dataset.py`: limpieza y tablas a nivel de factura.
 - `model.py`: construcción de variables, entrenamiento, evaluación y gráficos.
-- `graficos/`: imágenes usadas en este README.
+- `roc.png`, `deciles.png`, `importancia.png`: imágenes usadas en este README.
